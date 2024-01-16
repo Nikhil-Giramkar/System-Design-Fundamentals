@@ -1,0 +1,53 @@
+Design Patterns
+-------------------
+
+Design patterns provide a solution to some commonly occuring design problems.
+Knowing these commonly ocuring problems and solutions, we save a lot of time
+and don't waste efforts in re-inventing solutions.
+
+Any design pattern contains 4 parts. 
+    1. Pattern name
+    2. Problem.
+    3. Solution.
+    4. Consequences of using.
+
+Design Patterns can be broken down in types based on PURPOSE
+        a. Creational
+            Used for creating and instantiating objects and classes.
+            Patterns: 
+                Factory, 
+                Abstract Factory, 
+                Builder, 
+                Prototype, 
+                Singleton.
+        
+        b. Strcutural
+            Used for structuring more than one classes and objects together.
+            Delas with Inheritance and Inteface Segregation Principle (ISP).
+            Patterns: 
+                Adapter(Calss/Object), 
+                Bridge,
+                Composite,
+                Decorator,
+                Facade,
+                Flyweight,
+                Proxy.
+        
+        c. Behavorial
+            Used for identifying and setting up common communication patterns among objects.
+            Patterns:
+                Chain of Responsibility,
+                Iterator,
+                Mediator,
+                Momento,
+                Observer,
+                State,
+                Strategy,
+                Interpreter,
+                Template Method,
+                Command.
+
+There are roughly 20.25 Design Patterns.
+~ 80 % problems are solved by ~ 20 % patterns.
+
+We must be able to look at the roblem and identify the correct pattern which solve the problem.

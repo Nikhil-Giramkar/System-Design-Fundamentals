@@ -1,0 +1,31 @@
+Single Responsibility Principle (SRP)
+-----------------------------------------
+Each module/ class must perform a single action and it must have a single reason to change.
+
+Consider, we have Bill class having following methods and variables
+
+public class Bill {
+
+    List<MenuItem> billItems;
+    int billId;
+    Date billDate;
+
+    calculateFinalAmount();
+
+    printBill();
+
+    saveBill();
+}
+
+So currently, Bill class can calculate Bill, print Bill and save bill.
+Suppose, the business requirements change and Tech Team decided to add a new column to Database where
+Bill table in DB has an additional column named as isPaid.
+
+Now due to this reason, we had to make changes in Bill class as well by adding an additional property
+boolean isPaid
+
+So, due to a change in one method, we had to make changes in the class. So this violates SRP.
+Ideally, we should have different classes for Printing and Saving Bill.
+So that any changes in those feature do not need to change existing feature.
+
+Example 2: https://dotnettutorials.net/lesson/single-responsibility-principle/

@@ -1,0 +1,64 @@
+Inteface Segrgation Principle
+--------------------------------
+
+One big nterface can be broken down into smaller interfaces. 
+So that we do not force the client to implement the big interface.
+
+Suppose I own HP Printers software.
+I created an interface for all printers as below:
+
+public interface IPrintTasks{
+    void printContent();
+    void scanContent();
+    void photoCopyContent();
+    void faxContent();
+    void printDiuplexContent();
+}
+
+But now, the poblem is that my "HP Laser Jet M005" model has only first 3 abilities.
+It cannot fax or print duplex.
+But as we have mentioned them  in our interface, I need to write an implementation for fax and printDiuplex
+which is absolutely unncessary like ths:
+
+public class HPLaserJet : IPrintTasks
+{
+    void printContent(){
+        //Code fpr print
+    }
+
+    void scanContent(){
+        //Code for Scan
+    }
+
+    void photoCopyContent(){
+        //Code fpr photoCopy
+    }
+
+    //Forced to implement below 2
+
+    void faxContent(){
+        throw new NonImplementedException();
+    }
+
+    void printDiuplexContent(){
+        throw new NonImplementedException();
+    }
+}
+
+So to solve this, we must break down the interface into more smaller interaces like below:
+
+public interface IPrintTasks{
+    void printContent();
+    void scanContent();
+    void photoCopyContent();
+}
+
+public interface IFaxContent{
+    void faxContent();
+}
+
+public interface IPrintDiuplexContent{
+    void printDiuplexContent();
+}
+
+So each printer can implement one or more interfaces as per their ability.

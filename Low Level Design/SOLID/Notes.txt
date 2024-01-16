@@ -1,0 +1,69 @@
+SOLID Principles
+----------------
+    These are design principles that manage most of the design problems.
+    These princinples make software more flexible, understandable and maintainable.
+    Make application testable, components are reusable and extensible.
+
+    - S: Single Responsibility Principle
+    - O: Open Closed Principle
+    - L: Liskov Substitution Principle
+    - I: Interface Segregation Principle
+    - D: Dependency Inversion Principle
+
+Single Responsibility Principle (SRP)
+--------------------------------------
+    Robert Martin states this principle as,
+    "A class should have only one reason to change."
+    Every module or class should have responsiblity over single part of functionality provided by software.
+    And that responsiblity should be entirely encapsulated by the class.
+
+
+Open Closed Principle (OCP)
+--------------------------------------
+    Software entities should be open for extension but closed for modification.
+    It means, design and coding should be done in such a way that new functionality must be easily added
+    with minimum or no changes in existing code.
+
+
+Liskov Substitution Principle (LSP)
+--------------------------------------
+    B. Liskov states that, "objects in a program must be replaceable with instances of their subtypes,
+    without altering correctness of program."
+    If a program module is using a base class, then it should be replaceable by its derived class without 
+    affecting functionality of the module.
+    Derived types must be substitutable for their base types.
+
+
+Interface Segregation Principle (ISP)
+--------------------------------------
+    It states that, "many client-specific interfaces are better than one general purpose interface."
+    We should not enforce clients to implement interface which they do not use instead,
+    we can break down one big interface into many small interfaces.
+
+
+Dependency Inversion Principle (DIP)
+--------------------------------------
+    It states that, one should depend on abstractions and not concretions.
+    Abstractions should not depened on details whereas, details should depend on abstractions.
+    High level modules should not depend on low-level module.
+
+------------------------------------------------------------------------------------------------------------------
+
+What if I don't follow SOLID Principles ? 
+------------------------------------------
+
+    End up with tight or strong coupling of code with many other modules.
+    Tight coupling causes time to implement any requirement, features or any bug fixes and sometimes create unknown issues.
+    May end up with a code which is not testable.
+    End up with duplication of code in app.
+    May create a new bug on fixing one bug in app.
+
+
+Building a successful application is based on 3 decisions:
+----------------------------------------------------------
+    Architecture: Choosing an architecture is first step in designing application based on requirements.
+        Eg: MVC, MVVM, Web API, etc.
+    
+    Design Principles       
+    
+    Design Patterns

@@ -1,0 +1,56 @@
+Open Closed Principle
+---------------------
+
+A class should be open to extension but closed to modification.
+Any new modification to functionality must be made on dericed classes without touching existing code.
+
+Suppose we have below class :
+
+public class Employee{
+    int Id;
+    string name;
+    double salary;
+
+    double calculateSalary(){
+        return salary + (salary * 0.1);
+    }
+}
+
+Now, if we get a requirement change stating that give different bonuses depeneding on Employee type
+as permanent = 10% bonus and temporary = 5% bonus
+
+Now to implement this,
+we need to add one more property in Employee class as EmployeeType
+Then we need to add it as a parameter in calculateSalary() method or modify constructor of class
+Accordinlgy right if else in the function.
+
+So this way, due to a new requirement, we need to change the existing domain contract (class).
+We should be closed for modification but open for extension.
+
+So we can solve this problem by making Employee as abstract class or interface.
+Any new user requirement will be solved by extending this abstract class:
+
+public abstract class Employee{
+    int Id;
+    string name;
+    double salary;
+
+    double calculateSalary();
+}
+
+public class PermanentEmployee: Employee{
+
+    double calculateSalary(){
+        return salary + (salary * 0.1);
+    }
+}
+
+public class TemporaryEmployee: Employee{
+
+    double calculateSalary(){
+        return salary + (salary * 0.05);
+    }
+}
+
+So without touching original class, we fulfilled new user requirement.
+Without breaking existing code.

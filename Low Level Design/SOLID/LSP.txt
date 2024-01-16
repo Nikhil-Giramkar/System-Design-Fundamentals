@@ -1,0 +1,7 @@
+Liskov Substitution Principle
+------------------------------
+
+A derived class nust be completely substitutable for its base type.
+New derived class must extend without replacing existing functionality of old class.
+
+Example: https://youtube.com/watch?v=gnKx1RW_2Rk&list=PL6n9fhu94yhXjG1w2blMXUzyDrZ_eyOme&index=5

@@ -1,0 +1,6 @@
+Dependancy Inversion Principle
+-------------------------------
+Abstractions should not depened on details whereas, details should depend on abstractions.
+High level modules should not depend on low-level module.
+
+Example: https://www.youtube.com/watch?v=5WHKNOTqwsA&list=PL6n9fhu94yhXjG1w2blMXUzyDrZ_eyOme&index=6
