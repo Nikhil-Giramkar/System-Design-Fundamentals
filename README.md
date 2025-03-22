@@ -1,2 +1,2 @@
 # System-Design-Fundamentals
-All necessary concepts for interviews
+All necessary concepts for HLD/LLD interviews
