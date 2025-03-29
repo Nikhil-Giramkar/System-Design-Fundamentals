@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflowSystem", "StackOverflowSystem.csproj", "{F475E4D5-70F9-4969-A150-5D29F1ACC2AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F475E4D5-70F9-4969-A150-5D29F1ACC2AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F475E4D5-70F9-4969-A150-5D29F1ACC2AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F475E4D5-70F9-4969-A150-5D29F1ACC2AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F475E4D5-70F9-4969-A150-5D29F1ACC2AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
